@@ -11,7 +11,7 @@ TARGET = rsa_crack
 all: $(TARGET)
 
 $(TARGET): $(TARGET).c
-	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c -lm
 
 # Regra para limpar arquivos gerados
 clean:
